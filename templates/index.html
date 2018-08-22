@@ -5,294 +5,131 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="I am a Data Scientist with 3 years of experience - financial area. I love python, specially pandas.">
-    <meta name="author" content="Helder Rezende">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Helder Rezende</title>
+    <title>Blog</title>
 
     <!-- Bootstrap core CSS -->
     <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="static/css/resume.min.css" rel="stylesheet">
+    <link href="static/css/clean-blog.min.css" rel="stylesheet">
 
   </head>
 
-  <body id="page-top">
+  <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none"></span>
-        <span class="d-none d-lg-block">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/">Helder Rezende</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('blog.index') }}">Home</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </nav> 
 
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Helder
-            <span class="text-primary">Rezende</span>
-          </h1>
-          <div class="subheading mb-5">São Paulo.
-            <a href="mailto:name@email.com">helderfgv@gmail.com</a>
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('static/img/home-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+             <!--  <h1>Helder Rezende</h1> -->
+              <span class="subheading">Um blog sobre finanças quantitativas</span>
+            </div>
           </div>
-          <p class="mb-5">Financial Data Scientist.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://facebook.com/helderrezende">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/helderrezende_">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://br.linkedin.com/in/helderrezende">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/helderrezende">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
         </div>
-      </section>
+      </div>
+    </header>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Data Scientist</h3>
-              <div class="subheading mb-3">XP Investimentos</div>
-              <p>Portfolio recommendation using optimization.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2018 - Present</span>
-            </div>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <a href="{{ url_for('blog.diversificacao') }}">
+              <h2 class="post-title">
+                Estudo sobre correlação dos ativos
+              </h2>
+              <h3 class="post-subtitle">
+                Será mesmo que vale diversificar?
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Helder Rezende</a>
+               Agosto 21, 2018</p>
           </div>
+          <hr>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Data Analyst</h3>
-              <div class="subheading mb-3">BTG Pactual</div>
-              <p>stratsphera.com
-              <UL>
-              <LI>Languages: Python and R.</LI>
-              <LI>Frameworks: Django and Flask</LI>
-              <LI>Databases: MongoDB, SQLite and MySQL</LI>
-              <LI>NLP, Machine Learning.</LI>
-              <LI>Libraries: pandas, spacy, scikit-learning, d3js, plotly and arctic.</LI>
-
-              </UL>
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2017 - May 2018</span>
-            </div>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">IT Intern</h3>
-              <div class="subheading mb-3">BTG Pactual</div>
-              <p>The Technology Internship Program at BTG Pactual is designed to give interns a unique hands-on experience through learning and working side by side with top financial market professionals.
-
-                <UL>
-                  <LI>Languages: C#, VB.NET, VBA and AngularJS.</LI>
-                  <LI>Databases: SQL Server.</LI>
-                </UL>
-
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2016 - December 2016</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Market Risk Intern</h3>
-              <div class="subheading mb-3">Atico investimentos</div>
-              <p>Internship at market risk of hedge funds. Main functions:
-                <UL>
-                  <LI>Control risk reports to traders.</LI>
-                  <LI>Improvement in VaR's models and Stress test.</LI>
-                  <LI>Replace Matlab code to Python.</LI>
-                </UL>
-
-                Tools and technologies:
-                
-                <UL>
-                  <LI>Languages: Python, Matlab and VBA.</LI>
-                  <LI>Frameworks: Flask</LI>
-                </UL>
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">June 2015 - May 2016</span>
-            </div>
-          </div>
-
         </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">FGV - Fundação Getulio Vargas</h3>
-              <div class="subheading mb-3">Bachelor of Applied Mathematics</div>
-        
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2013 - December 2016</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Escola Preparatorio de Cadetes do Ar - EPCar</h3>
-              <div class="subheading mb-3">Military School</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2008 - December 2010</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-
-            <li class="list-inline-item">
-                  <i class="devicons devicons-python"></i>
-            </li>
-
-            <li class="list-inline-item">
-              <i class="devicons devicons-aws"></i>
-            </li>
-
-            <li class="list-inline-item">
-              <i class="devicons devicons-ubuntu"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-git"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-linux"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-                <i class="devicons devicons-terminal"></i>
-              </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-mongodb"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sqllite"></i>
-            </li>
-          </ul>
-
-        
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p></p>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              CPA20 - ANBIMA</li>
-          </ul>
-        </div>
-      </section>
-
+      </div>
     </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Helder Rezende 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
     <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for this template -->
-    <script src="static/js/resume.min.js"></script>
+    <script src="static/js/clean-blog.min.js"></script>
 
   </body>
 
